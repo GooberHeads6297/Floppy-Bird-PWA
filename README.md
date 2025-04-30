@@ -1,7 +1,7 @@
 Floppy Bird PWA (Progressive Web Application)
 This version of Floppy Bird basically acts like a basic app for your smartphone or computer without having to actually be one. If you want to install it as one.
 
-It works the same as the other version for Floppy-Bird, where it's mobile friednly and it can run in your browser, but you can choose to install it like as if it were a real app.
+It works the same as the other version for Floppy-Bird, where it's mobile friendly and it can run in your browser, but you can choose to install it like as if it were a real app.
 
 Play the game in your browser:
 
