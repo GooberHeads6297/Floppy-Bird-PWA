@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#249dee">
+    <title>Floppy Bird</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: #249dee;
+            position: relative; 
+        }
+        canvas {
+            display: block;
+        }
+        #soundToggleButton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(0,0,0,0.3);
+            border: 2px solid white;
+            border-radius: 5px;
+            color: white;
+            font-size: 24px; 
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            user-select: none; 
+            -webkit-tap-highlight-color: transparent; 
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <audio id="backgroundMusic" src="music/music.mp3" loop></audio>
+    <audio id="crashSound" src="sound/crash-sound.mp3"></audio>
+    <button id="soundToggleButton">🔊</button>
+    <script src="floppy-bird.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    })
+                    .catch(error => {
+                        console.log('ServiceWorker registration failed: ', error);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
