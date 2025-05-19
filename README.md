@@ -5,7 +5,7 @@ It works the same as the other version for Floppy-Bird, where it's mobile friend
 
 Play the game in your browser:
 
-https://gooberheads6297.github.io/Floppy-Bird-Web-App/
+https://gooberheads6297.github.io/Floppy-Bird-PWA/
 
 What the game offers:
 
